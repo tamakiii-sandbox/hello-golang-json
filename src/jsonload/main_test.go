@@ -2,10 +2,8 @@ package jsonload
 
 import (
 	"io/ioutil"
-	"testing"
-
-	// "encoding/json"
 	"jsonload"
+	"testing"
 )
 
 func TestLoadUsersFile(t *testing.T) {

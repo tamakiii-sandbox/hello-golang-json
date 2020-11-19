@@ -1,4 +1,4 @@
-.PHONY: help setup dependencies clean
+.PHONY: help setup dependencies bash test clean
 
 NAME := tamakiii-sandbox/hello-golang-json
 
@@ -16,5 +16,8 @@ build: Dockerfile
 
 bash: build
 	docker run -it --rm -v $(PWD):/go -w /go -e GOPATH=/go $(NAME) $@
+
+test:
+	docker run -it --rm -v $(PWD):/go -w /go -e GOPATH=/go $(NAME) make test
 
 clean:
