@@ -1,4 +1,4 @@
-.PHONY: help setup dependencies test clean
+.PHONY: help setup dependencies build test clean
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -9,7 +9,10 @@ setup: \
 dependencies:
 	type go
 
-test:
-	go test src/jsonload/main_test.go
+build:
+	go build
+
+test: build
+	go test
 
 clean:
