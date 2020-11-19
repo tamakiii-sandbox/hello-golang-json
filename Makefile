@@ -10,6 +10,6 @@ dependencies:
 	type go
 
 test:
-	go test src/main/main_test.go
+	go test src/jsonload/main_test.go
 
 clean:
