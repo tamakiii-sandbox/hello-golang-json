@@ -1,0 +1,12 @@
+{
+  "organization": [
+    {
+      "uid": "the_beatles",
+      "uname": "The Beatles",
+      "members": [
+        {"id": 1, "name": "John"},
+        {"id": 2, "name": "Paul"}
+      ]
+    }
+  ]
+}
